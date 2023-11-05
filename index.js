@@ -61,7 +61,6 @@ async function fetchBreedText(breed) {
 
     const wikiImg = document.createElement("img");
     wikiImg.classList.add("wiki-img");
-    wikiImg.style.width = "100%";
 
     const imageUrl = await fetchRandomDogImage(breed);
     if (imageUrl) {

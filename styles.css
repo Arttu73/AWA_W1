@@ -23,6 +23,10 @@ body {
   padding: 5px;
 }
 
+.wiki-img {
+  width: 100%;
+}
+
 .wiki-text {
   min-width: 100%;
   max-width: 100%;
