@@ -76,7 +76,7 @@ async function fetchBreedText(breed) {
     container.appendChild(wikiItem);
   };
 
-  const dogBreeds = ["husky", "beagle", "poodle", "bulldog", "corgi"];
+  const dogBreeds = ["husky", "beagle", "poodle", "bulldog", "corgi", "dingo"];
 
   // Generate five wiki items
   for (const breed of dogBreeds) {
