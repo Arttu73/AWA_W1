@@ -1,12 +1,12 @@
-import "./styles.css";
-
 const container = document.createElement("div");
 container.classList.add("container");
 document.body.appendChild(container);
 
 async function fetchRandomDogImage(breed) {
   try {
-    const response = await fetch(`https://dog.ceo/api/breed/${breed}/images/random`);
+    const response = await fetch(
+      `https://dog.ceo/api/breed/${breed}/images/random`,
+    );
     if (!response.ok) {
       throw new Error(`Failed to fetch data for breed: ${breed}`);
     }
@@ -24,7 +24,9 @@ async function fetchRandomDogImage(breed) {
 
 async function fetchBreedText(breed) {
   try {
-    const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${breed}`);
+    const response = await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${breed}`,
+    );
     if (!response.ok) {
       throw new Error(`Failed to fetch Wikipedia data for breed: ${breed}`);
     }
